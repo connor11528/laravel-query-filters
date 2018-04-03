@@ -47060,6 +47060,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 												"responded": true,
 												"response": "I will be attending",
 												"managers": ["Tom Jones", "Joe Bloggs"]
+								}).then(function (res) {
+												console.log('res: ', res);
 								});
 								console.log('Component mounted.');
 				}

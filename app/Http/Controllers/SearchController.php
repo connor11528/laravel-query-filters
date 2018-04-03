@@ -23,23 +23,6 @@ class SearchController extends Controller
             $user->where('city', $request->input('city'));
         }
 
-        if($request->has('managers')){
-            $user->whereHas('managers', function ($query) use ($request) {
-                $query->whereIn('managers.name', $request->input('managers'));
-            });
-        }
-
-        if($request->has('event')){
-            $user->whereHas('rsvp.event', function ($query) use ($request) {
-                $query->where('event.slug', $request->input('event'));
-            });
-
-            if($request->has('response')){
-                $user->whereHas('rsvp', function ($query) use ($request) {
-                   $user->where('response', 'I will be attending');
-                });
-            }
-        }
         return $user->get();
     }
 }

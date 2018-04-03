@@ -3,6 +3,8 @@
 
 ### Helpful resources
 
+Forms: https://laravelcollective.com/docs/5.4/html
+
 [Writing advanced Eloquent search query filters](https://m.dotdev.co/writing-advanced-eloquent-search-query-filters-de8b6c2598db) (Medium)
 
 [Eloquent Techniques: Dedicated Query String Filtering](https://laracasts.com/series/eloquent-techniques/episodes/4) (Laracast)

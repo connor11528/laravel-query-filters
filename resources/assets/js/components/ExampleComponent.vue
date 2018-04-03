@@ -28,7 +28,9 @@
 					"Tom Jones",
 					"Joe Bloggs"
 				],
-			});
+			}).then((res)=>{
+				console.log('res: ', res);
+            });
             console.log('Component mounted.')
         }
     }
