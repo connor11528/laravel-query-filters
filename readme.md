@@ -3,9 +3,11 @@
 
 ### Helpful resources
 
-Forms: https://laravelcollective.com/docs/5.4/html
+HTML Forms: https://laravelcollective.com/docs/5.4/html
 
-[reinink/laracon2018](https://github.com/reinink/laracon2018) (Github)
+Talk from Laracon online: [reinink/laracon2018](https://github.com/reinink/laracon2018) (Github)
+
+Populate real address data using Faker PHP library: https://github.com/nonsapiens/addressfactory
 
 [Writing advanced Eloquent search query filters](https://m.dotdev.co/writing-advanced-eloquent-search-query-filters-de8b6c2598db) (Medium)
 
