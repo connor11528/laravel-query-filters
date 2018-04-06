@@ -8,5 +8,6 @@ use Spatie\Tags\HasTags;
 class Company extends Model
 {
     use HasTags;
-    protected $fillable = [ 'name', 'website', 'year_founded', 'city'];
+    protected $guarded = [];
+
 }

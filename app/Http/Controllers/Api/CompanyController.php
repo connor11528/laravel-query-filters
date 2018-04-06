@@ -1,17 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use Illuminate\Http\Request;
 use App\Company;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class CompanyController extends Controller
 {
-    public function __construct(Company $company)
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -20,7 +16,7 @@ class CompanyController extends Controller
     public function index()
     {
         $companies = Company::paginate();
-        return view('companies.index', compact('companies'));
+        return response()->json($companies);
     }
 
     /**
@@ -30,7 +26,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        return view('companies.create');
+        //
     }
 
     /**
@@ -41,37 +37,36 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Company $company)
     {
-        $company = Company::findOrFail($id);
-        return view('companies.show', compact('company'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
     public function edit(Company $company)
     {
-        return view('companies.edit', $company);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Company $company)
@@ -82,10 +77,10 @@ class CompanyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Company $company)
     {
         //
     }
