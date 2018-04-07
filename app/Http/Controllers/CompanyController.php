@@ -9,7 +9,8 @@ class CompanyController extends Controller
 {
     public function __construct(Company $company)
     {
-        $this->middleware('auth');
+        $this->middleware('auth')
+            ->except(['index', 'show']);
     }
 
     /**
