@@ -3,17 +3,6 @@
 @section('content')
     <h1>All Companies</h1>
 
-    <div>
-        <b-btn v-b-modal.modal1>Launch demo modal</b-btn>
-
-        <!-- Modal Component -->
-        <b-modal id="modal1" title="Bootstrap-Vue">
-            <p class="my-4">Hello from modal!</p>
-        </b-modal>
-    </div>
-
-
-
     @auth
         <a class="btn btn-success" href="{{ route('companies.create') }}">Add new</a>
     @endauth
